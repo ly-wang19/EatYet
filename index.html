@@ -22,7 +22,7 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         h1 { color: #FF6B35; margin-bottom: 20px; font-size: 28px; }
-        h2 { color: #333; margin-top: 30px; margin-bottom: 15px; font-size: 20px; }
+        h2 { color: #333; margin-top: 30px; margin-bottom: 15px; font-size: 20px; border-left: 4px solid #FF6B35; padding-left: 12px; }
         h3 { color: #555; margin-top: 20px; margin-bottom: 10px; font-size: 16px; }
         p { margin-bottom: 15px; text-align: justify; }
         ul { margin-left: 20px; margin-bottom: 15px; }
@@ -30,69 +30,135 @@
         .contact { background: #f8f8f8; padding: 20px; border-radius: 8px; margin-top: 30px; }
         .contact strong { color: #FF6B35; }
         .effective-date { color: #888; font-size: 14px; margin-bottom: 20px; }
-        .lang-switch { text-align: right; margin-bottom: 20px; }
-        .lang-switch a { color: #FF6B35; text-decoration: none; margin-left: 10px; }
+        .highlight { background: #fff8e1; padding: 15px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ffc107; }
+        .data-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        .data-table th, .data-table td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        .data-table th { background: #f8f8f8; }
+        .section-number { display: inline-block; width: 30px; height: 30px; background: #FF6B35; color: white; text-align: center; line-height: 30px; border-radius: 50%; margin-right: 10px; }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="lang-switch">
-            <a href="#english">English</a>
+        <h1><span class="section-number">1</span>隐私政策</h1>
+        <p class="effective-date">生效日期：2025年3月23日 | 最后更新：2025年3月23日</p>
+
+        <div class="highlight">
+            <strong>重要提示：</strong>本应用严格遵循 Apple App Store 审核指南（第5.1.2条和第5.1.3条）关于数据收集和隐私保护的要求。我们承诺透明、负责任地处理您的数据。
         </div>
 
-        <h1>隐私政策</h1>
-        <p class="effective-date">生效日期：2025年3月23日</p>
-
-        <h2>1. 引言</h2>
-        <p>欢迎使用"吃了么"（EatYet）应用（以下简称"本应用"）。我们非常重视您的隐私保护和个人信息安全。本隐私政策旨在向您说明我们如何收集、使用、存储和保护您的个人信息。</p>
+        <h2>1.1 引言</h2>
+        <p>欢迎使用"吃了么"（EatYet）应用。我们非常重视您的隐私保护和个人信息安全。本隐私政策详细说明了我们如何收集、使用、存储和保护您的个人信息。</p>
         <p>使用本应用前，请您仔细阅读并理解本隐私政策。使用本应用即表示您同意本隐私政策的全部内容。</p>
 
-        <h2>2. 信息收集</h2>
-        <h3>2.1 您主动提供的信息</h3>
+        <h2>1.2 我们收集的数据</h2>
+
+        <h3>（1）您主动提供的信息</h3>
+        <table class="data-table">
+            <tr>
+                <th>数据类型</th>
+                <th>收集目的</th>
+                <th>是否必需</th>
+            </tr>
+            <tr>
+                <td><strong>账户信息</strong><br>邮箱、昵称、头像</td>
+                <td>用户身份验证、个性化服务</td>
+                <td>注册时必需</td>
+            </tr>
+            <tr>
+                <td><strong>饮食记录</strong><br>餐食照片、食物名称、卡路里</td>
+                <td>饮食追踪、营养分析、健康建议</td>
+                <td>核心功能必需</td>
+            </tr>
+            <tr>
+                <td><strong>健康数据</strong><br>体重、身高、健康目标</td>
+                <td>健康趋势分析、个性化建议</td>
+                <td>可选</td>
+            </tr>
+            <tr>
+                <td><strong>位置信息</strong><br>大致位置（需授权）</td>
+                <td>推荐附近餐厅、计算距离</td>
+                <td>可选，需明确授权</td>
+            </tr>
+            <tr>
+                <td><strong>反馈内容</strong><br>意见建议、错误报告</td>
+                <td>改进服务、修复问题</td>
+                <td>可选</td>
+            </tr>
+        </table>
+
+        <h3>（2）自动收集的信息</h3>
         <ul>
-            <li><strong>账户信息</strong>：注册时提供的邮箱、昵称、头像</li>
-            <li><strong>健康数据</strong>：体重、饮食记录、运动数据、健康目标</li>
-            <li><strong>位置信息</strong>：用于推荐附近餐厅（需您授权）</li>
-            <li><strong>照片权限</strong>：用于拍照识别食物营养成分（需您授权）</li>
-            <li><strong>反馈内容</strong>：您提交的意见建议、错误报告</li>
+            <li><strong>设备信息</strong>：设备型号、操作系统版本、唯一设备标识符（用于分析和服务优化）</li>
+            <li><strong>使用数据</strong>：应用使用情况、功能点击频率、会话时长（用于改进用户体验）</li>
+            <li><strong>崩溃日志</strong>：应用崩溃信息（用于修复bug）</li>
+            <li><strong>网络信息</strong>：IP地址（用于安全验证和统计分析）</li>
         </ul>
 
-        <h3>2.2 自动收集的信息</h3>
+        <h2>1.3 数据使用目的</h2>
+        <p>我们收集的数据仅用于以下明确声明的目的：</p>
         <ul>
-            <li><strong>设备信息</strong>：设备型号、操作系统版本、唯一设备标识符</li>
-            <li><strong>使用数据</strong>：应用使用情况、功能点击频率、崩溃日志</li>
-            <li><strong>网络信息</strong>：IP地址、网络服务提供商</li>
+            <li><strong>提供核心功能</strong>：饮食记录、健康分析、餐厅推荐</li>
+            <li><strong>个性化服务</strong>：根据您的健康数据提供智能建议</li>
+            <li><strong>改进服务</strong>：分析使用数据优化应用性能和用户体验</li>
+            <li><strong>安全保护</strong>：防范欺诈行为、保护账户安全</li>
+            <li><strong>法律合规</strong>：满足法律法规要求</li>
+        </ul>
+        <p><strong>重要声明：</strong>我们不会将您的数据用于任何其他未声明的目的。</p>
+
+        <h2>1.4 数据共享与第三方服务</h2>
+
+        <h3>（1）我们承诺</h3>
+        <div class="highlight">
+            <ul>
+                <li><strong>不出售</strong>：我们绝不会出售您的个人信息</li>
+                <li><strong>不租借</strong>：我们不会将您的信息租借给第三方</li>
+                <li><strong>最小化共享</strong>：仅在必要情况下与第三方共享数据</li>
+            </ul>
+        </div>
+
+        <h3>（2）使用的第三方服务</h3>
+        <table class="data-table">
+            <tr>
+                <th>服务提供商</th>
+                <th>服务内容</th>
+                <th>数据处理方式</th>
+            </tr>
+            <tr>
+                <td><strong>Firebase (Google)</strong></td>
+                <td>用户认证、云存储、崩溃分析</td>
+                <td>数据加密存储，符合 GDPR 和 CCPA</td>
+            </tr>
+            <tr>
+                <td><strong>高德地图</strong></td>
+                <td>位置服务、地图展示</td>
+                <td>位置数据仅用于显示，不存储</td>
+            </tr>
+            <tr>
+                <td><strong>OpenAI API</strong></td>
+                <td>AI 对话、食物识别</td>
+                <td>请求后立即删除，不用于训练</td>
+            </tr>
+        </table>
+
+        <h3>（3）法律要求下的共享</h3>
+        <p>在以下情况下，我们可能与第三方共享信息：</p>
+        <ul>
+            <li>应政府部门或司法机关的合法要求</li>
+            <li>为保护我们的权利和财产</li>
+            <li>与可信的服务提供商合作（需签署保密协议）</li>
         </ul>
 
-        <h2>3. 信息使用</h2>
-        <p>我们收集的信息将用于以下用途：</p>
-        <ul>
-            <li>提供核心功能：饮食记录、健康分析、餐厅推荐</li>
-            <li>个性化服务：根据您的健康数据提供智能建议</li>
-            <li>改善服务：分析使用数据优化应用性能和用户体验</li>
-            <li>安全保护：防范欺诈行为、保护账户安全</li>
-            <li>法律合规：满足法律法规要求</li>
-        </ul>
-
-        <h2>4. 信息共享</h2>
-        <p>我们承诺不会出售您的个人信息。在以下情况下，我们可能与第三方共享信息：</p>
-        <ul>
-            <li><strong>服务提供商</strong>：Firebase（Google）提供数据存储和分析服务</li>
-            <li><strong>法律要求</strong>：应政府部门或司法机关要求</li>
-            <li><strong>业务转让</strong>：如发生合并、收购</li>
-        </ul>
-        <p>所有第三方服务提供商均签署了严格的保密协议。</p>
-
-        <h2>5. 数据安全</h2>
+        <h2>1.5 数据安全措施</h2>
         <p>我们采取以下安全措施保护您的信息：</p>
         <ul>
-            <li>使用SSL/TLS加密传输数据</li>
-            <li>敏感信息采用AES-256加密存储</li>
-            <li>定期进行安全审计和漏洞扫描</li>
-            <li>限制员工对用户数据的访问权限</li>
+            <li><strong>传输加密</strong>：使用 SSL/TLS 加密所有数据传输</li>
+            <li><strong>存储加密</strong>：敏感数据采用 AES-256 加密存储</li>
+            <li><strong>访问控制</strong>：严格限制员工对用户数据的访问权限</li>
+            <li><strong>安全审计</strong>：定期进行安全审计和漏洞扫描</li>
+            <li><strong>匿名化</strong>：分析数据时进行去标识化处理</li>
         </ul>
 
-        <h2>6. 您的权利</h2>
+        <h2>1.6 您的权利</h2>
         <p>您对自己的个人信息享有以下权利：</p>
         <ul>
             <li><strong>访问权</strong>：查看我们收集的您的个人信息</li>
@@ -100,119 +166,206 @@
             <li><strong>删除权</strong>：要求删除您的账户和相关数据</li>
             <li><strong>导出权</strong>：要求以可读格式导出您的数据</li>
             <li><strong>撤回同意</strong>：随时撤回对数据处理的同意</li>
+            <li><strong>限制处理</strong>：要求限制对某些数据的处理</li>
         </ul>
-        <p>您可以通过应用内的设置页面或联系我们来行使上述权利。</p>
+        <p><strong>如何行使权利：</strong>您可以通过应用内的设置页面或通过下方的联系方式向我们提出请求。</p>
 
-        <h2>7. 第三方服务</h2>
-        <p>本应用使用以下第三方服务：</p>
+        <h2>1.7 数据保留期限</h2>
         <ul>
-            <li><strong>Firebase（Google）</strong>：用户认证、数据存储、崩溃分析</li>
-            <li><strong>高德地图</strong>：位置服务和地图展示</li>
-            <li><strong>OpenAI API</strong>：AI对话和食物识别功能</li>
+            <li><strong>账户数据</strong>：账户存续期间保留，删除账户后30天内清除</li>
+            <li><strong>使用数据</strong>：保留12个月后自动删除</li>
+            <li><strong>崩溃日志</strong>：保留30天后自动删除</li>
+            <li><strong>法律要求</strong>：如法律有特殊要求，按法律规定执行</li>
         </ul>
-        <p>这些服务有其独立的隐私政策，建议您仔细阅读。</p>
 
-        <h2>8. 未成年人保护</h2>
-        <p>本应用面向13岁以上用户。如果我们发现收集了未满13岁儿童的个人信息，将采取措施删除该信息。</p>
+        <h2>1.8 儿童隐私保护</h2>
+        <p>本应用面向13岁以上用户。如果我们发现收集了未满13岁儿童的个人信息，将立即采取措施删除该信息。</p>
+        <p>我们不会故意收集13岁以下儿童的个人信息。</p>
 
-        <h2>9. 政策变更</h2>
+        <h2>1.9 健康数据特别声明</h2>
+        <div class="highlight">
+            <p><strong>重要说明：</strong></p>
+            <ul>
+                <li>本应用收集的健康数据（体重、饮食记录）仅用于个人健康管理</li>
+                <li><strong>不用于医疗诊断</strong>或治疗建议</li>
+                <li><strong>不与医疗机构共享</strong>健康数据</li>
+                <li>用户可随时删除或导出自己的健康数据</li>
+                <li>健康数据存储在加密的云端数据库中</li>
+            </ul>
+        </div>
+
+        <h2>1.10 跨境数据传输</h2>
+        <p>您的数据可能被传输到您所在国家/地区以外的服务器进行处理。我们会确保：</p>
+        <ul>
+            <li>数据传输过程中保持加密</li>
+            <li>接收方有充分的数据保护水平</li>
+            <li>符合适用的数据保护法律法规</li>
+        </ul>
+
+        <h2>1.11 政策变更</h2>
         <p>我们可能不时更新本隐私政策。更新后的政策将在应用内发布，重大变更会通过通知告知您。</p>
+        <p>继续使用本应用即表示您接受更新后的隐私政策。</p>
 
-        <h2>10. 联系我们</h2>
-        <p>如您对本隐私政策有任何疑问、意见或建议，请通过以下方式联系我们：</p>
+        <h2>1.12 联系我们</h2>
+        <p>如您对本隐私政策有任何疑问、意见或建议，或想行使您的数据权利，请通过以下方式联系我们：</p>
 
         <div class="contact">
-            <p><strong>邮箱：</strong>3478558241@qq.com</p>
             <p><strong>应用名称：</strong>吃了么（EatYet）</p>
-            <p><strong>开发者：</strong>刘腾</p>
+            <p><strong>开发者：</strong>刘腾（Teng Liu）</p>
+            <p><strong>邮箱：</strong><a href="mailto:3478558241@qq.com">3478558241@qq.com</a></p>
+            <p><strong>技术支持：</strong><a href="https://ly-wang19.github.io/EatYet/">https://ly-wang19.github.io/EatYet/</a></p>
         </div>
 
         <p style="margin-top: 30px; color: #888; font-size: 14px;">
-            最后更新日期：2025年3月23日
+            本隐私政策符合以下法律法规：<br>
+            - 《中华人民共和国个人信息保护法》<br>
+            - 欧盟《通用数据保护条例》(GDPR)<br>
+            - Apple App Store 审核指南第5.1.2条和第5.1.3条
         </p>
 
         <hr style="margin: 40px 0; border: none; border-top: 1px solid #eee;">
 
-        <h1 id="english">Privacy Policy</h1>
-        <p class="effective-date">Effective Date: March 23, 2025</p>
+        <h1>Privacy Policy</h1>
+        <p class="effective-date">Effective Date: March 23, 2025 | Last Updated: March 23, 2025</p>
 
-        <h2>1. Introduction</h2>
-        <p>Welcome to "EatYet" (hereinafter referred to as "the App"). We highly value your privacy and personal information security. This Privacy Policy explains how we collect, use, store, and protect your personal information.</p>
-        <p>By using this App, you agree to the terms of this Privacy Policy.</p>
+        <div class="highlight">
+            <strong>Important:</strong> This app strictly complies with Apple App Store Review Guidelines (Section 5.1.2 and 5.1.3) regarding data collection and privacy protection.
+        </div>
 
-        <h2>2. Information We Collect</h2>
-        <h3>2.1 Information You Provide</h3>
-        <ul>
-            <li><strong>Account Information</strong>: Email, nickname, avatar</li>
-            <li><strong>Health Data</strong>: Weight, diet records, workout data, health goals</li>
-            <li><strong>Location</strong>: For nearby restaurant recommendations (with your authorization)</li>
-            <li><strong>Photos</strong>: For food recognition and nutrition analysis (with your authorization)</li>
-            <li><strong>Feedback</strong>: Comments, suggestions, and bug reports</li>
-        </ul>
+        <h2>2.1 Introduction</h2>
+        <p>Welcome to "EatYet". We are committed to protecting your privacy and personal information. This Privacy Policy explains how we collect, use, store, and protect your information.</p>
 
-        <h3>2.2 Automatically Collected Information</h3>
+        <h2>2.2 Information We Collect</h2>
+
+        <h3>(1) Information You Provide</h3>
+        <table class="data-table">
+            <tr>
+                <th>Data Type</th>
+                <th>Purpose</th>
+                <th>Required</th>
+            </tr>
+            <tr>
+                <td><strong>Account Info</strong><br>Email, nickname, avatar</td>
+                <td>User authentication, personalization</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td><strong>Diet Records</strong><br>Food photos, calories</td>
+                <td>Diet tracking, nutrition analysis</td>
+                <td>Core feature</td>
+            </tr>
+            <tr>
+                <td><strong>Health Data</strong><br>Weight, height, goals</td>
+                <td>Health trends, recommendations</td>
+                <td>Optional</td>
+            </tr>
+            <tr>
+                <td><strong>Location</strong><br>Approximate location</td>
+                <td>Nearby restaurant recommendations</td>
+                <td>Optional, requires consent</td>
+            </tr>
+        </table>
+
+        <h3>(2) Automatically Collected Information</h3>
         <ul>
             <li><strong>Device Information</strong>: Device model, OS version, unique device ID</li>
-            <li><strong>Usage Data</strong>: App usage patterns, feature interactions, crash logs</li>
-            <li><strong>Network Information</strong>: IP address, network service provider</li>
+            <li><strong>Usage Data</strong>: App usage patterns, feature interactions, session length</li>
+            <li><strong>Crash Logs</strong>: Application crash information for bug fixes</li>
+            <li><strong>Network Information</strong>: IP address for security and analytics</li>
         </ul>
 
-        <h2>3. How We Use Your Information</h2>
+        <h2>2.3 How We Use Your Information</h2>
         <ul>
-            <li>Provide core features: Diet tracking, health analysis, restaurant recommendations</li>
-            <li>Personalized services: Smart recommendations based on your health data</li>
-            <li>Improve service: Analyze usage data to optimize performance and user experience</li>
-            <li>Security: Prevent fraud and protect account security</li>
-            <li>Legal compliance: Meet regulatory requirements</li>
+            <li><strong>Core Features</strong>: Diet tracking, health analysis, restaurant recommendations</li>
+            <li><strong>Personalization</strong>: Smart recommendations based on your data</li>
+            <li><strong>Service Improvement</strong>: Analytics to optimize performance</li>
+            <li><strong>Security</strong>: Fraud prevention and account protection</li>
         </ul>
+        <p><strong>Our Commitment:</strong> We do not use your data for any unstated purposes.</p>
 
-        <h2>4. Information Sharing</h2>
-        <p>We do not sell your personal information. We may share data with third parties in the following cases:</p>
+        <h2>2.4 Data Sharing & Third Parties</h2>
+
+        <h3>(1) Our Commitment</h3>
+        <div class="highlight">
+            <ul>
+                <li><strong>We do NOT sell</strong> your personal information</li>
+                <li><strong>We do NOT rent</strong> your information to third parties</li>
+                <li><strong>Minimal sharing</strong> only when necessary</li>
+            </ul>
+        </div>
+
+        <h3>(2) Third-Party Services</h3>
+        <table class="data-table">
+            <tr>
+                <th>Provider</th>
+                <th>Service</th>
+                <th>Data Handling</th>
+            </tr>
+            <tr>
+                <td><strong>Firebase (Google)</strong></td>
+                <td>Authentication, cloud storage, analytics</td>
+                <td>Encrypted, GDPR & CCPA compliant</td>
+            </tr>
+            <tr>
+                <td><strong>Amap</strong></td>
+                <td>Location services, maps</td>
+                <td>Location used for display only, not stored</td>
+            </tr>
+            <tr>
+                <td><strong>OpenAI API</strong></td>
+                <td>AI chat, food recognition</td>
+                <td>Deleted immediately after request</td>
+            </tr>
+        </table>
+
+        <h2>2.5 Data Security</h2>
         <ul>
-            <li><strong>Service Providers</strong>: Firebase (Google) for data storage and analytics</li>
-            <li><strong>Legal Requirements</strong>: When required by government authorities</li>
-            <li><strong>Business Transfer</strong>: In case of merger or acquisition</li>
+            <li><strong>Encryption in Transit</strong>: SSL/TLS for all data transfers</li>
+            <li><strong>Encryption at Rest</strong>: AES-256 for sensitive data</li>
+            <li><strong>Access Control</strong>: Strict employee access restrictions</li>
+            <li><strong>Security Audits</strong>: Regular security reviews</li>
+            <li><strong>Anonymization</strong>: Data de-identification for analytics</li>
         </ul>
 
-        <h2>5. Data Security</h2>
-        <ul>
-            <li>SSL/TLS encryption for data transmission</li>
-            <li>AES-256 encryption for sensitive data storage</li>
-            <li>Regular security audits and vulnerability scans</li>
-            <li>Restricted employee access to user data</li>
-        </ul>
-
-        <h2>6. Your Rights</h2>
+        <h2>2.6 Your Rights</h2>
         <ul>
             <li><strong>Access</strong>: View your personal information</li>
             <li><strong>Correct</strong>: Update inaccurate information</li>
-            <li><strong>Delete</strong>: Request deletion of your account and data</li>
-            <li><strong>Export</strong>: Request a copy of your data</li>
+            <li><strong>Delete</strong>: Request deletion of your data</li>
+            <li><strong>Export</strong>: Receive a copy of your data</li>
             <li><strong>Withdraw Consent</strong>: Revoke consent at any time</li>
         </ul>
 
-        <h2>7. Third-Party Services</h2>
-        <ul>
-            <li><strong>Firebase (Google)</strong>: Authentication, cloud storage, analytics</li>
-            <li><strong>Amap (高德地图)</strong>: Location services and maps</li>
-            <li><strong>OpenAI API</strong>: AI chat and food recognition</li>
-        </ul>
+        <h2>2.7 Health Data Declaration</h2>
+        <div class="highlight">
+            <p><strong>Important:</strong></p>
+            <ul>
+                <li>Health data (weight, diet) is for personal wellness only</li>
+                <li><strong>NOT for medical diagnosis</strong> or treatment</li>
+                <li><strong>NOT shared</strong> with medical institutions</li>
+                <li>Users can delete or export their health data anytime</li>
+            </ul>
+        </div>
 
-        <h2>8. Children's Privacy</h2>
-        <p>This App is intended for users aged 13 and above. We do not knowingly collect information from children under 13.</p>
+        <h2>2.8 Children's Privacy</h2>
+        <p>This app is for users aged 13 and above. We do not knowingly collect information from children under 13.</p>
 
-        <h2>9. Changes to This Policy</h2>
-        <p>We may update this Privacy Policy from time to time. Significant changes will be notified within the App.</p>
+        <h2>2.9 Changes to This Policy</h2>
+        <p>We may update this policy. Significant changes will be notified within the app.</p>
 
-        <h2>10. Contact Us</h2>
+        <h2>2.10 Contact Us</h2>
         <div class="contact">
-            <p><strong>Email:</strong>3478558241@qq.com</p>
             <p><strong>App Name:</strong>EatYet (吃了么)</p>
             <p><strong>Developer:</strong>Teng Liu</p>
+            <p><strong>Email:</strong><a href="mailto:3478558241@qq.com">3478558241@qq.com</a></p>
+            <p><strong>Support:</strong><a href="https://ly-wang19.github.io/EatYet/">https://ly-wang19.github.io/EatYet/</a></p>
         </div>
 
         <p style="margin-top: 30px; color: #888; font-size: 14px;">
-            Last Updated: March 23, 2025
+            This Privacy Policy complies with:<br>
+            - General Data Protection Regulation (GDPR)<br>
+            - California Consumer Privacy Act (CCPA)<br>
+            - Apple App Store Review Guidelines Section 5.1.2 and 5.1.3
         </p>
     </div>
 </body>
